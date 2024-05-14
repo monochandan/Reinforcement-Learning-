@@ -4,5 +4,5 @@ all code related to RL
 libraries:
   - matplotlib
   - numpy
-  - gymnesium == 0.27.0
+  - gymnasium == 0.27.0
   - tqdm
