@@ -1,0 +1,29 @@
+git init
+git status
+git add .
+git commit -m "mshg"
+git branch -M main
+git remote add origin repo_url
+git push origin branch name / master
+
+! [rejected]          main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/monochandan/Reinforcement-Learning-.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git pull origin main
+git push origin main
+
+! [rejected]          main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/monochandan/Reinforcement-Learning-.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git pull origin main --allow-unrelated-histories
+git push origin main --allow-unrelated-histories
+git push origin main
